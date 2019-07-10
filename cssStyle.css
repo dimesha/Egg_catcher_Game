@@ -4,15 +4,18 @@ body{
     height: 100%;
     margin: 0;
     font-family:sans-serif ;
+    background: url("imag/background.jpg");
+
 }
 #container{
     height:95%;
     width: 90%;
+    margin-top: 30px;
     margin-left: 5%;
     position: relative;
-    border: 1px solid firebrick;
+    /*border: 1px solid firebrick;*/
     overflow: hidden;
-    background: #80bdff;
+    background: linear-gradient(to top, #43e97b 0%, #38f9d7 100%);;
 }
 #score_help{
     text-align: center;
@@ -29,8 +32,8 @@ body{
 }
 .hen{
     position: absolute;
-    height: 22%;
-    width: 10%;
+    height: 25%;
+    width: 11%;
     top: 10%;
     background: url("imag/hen.png");
     background-size: cover;
@@ -38,13 +41,13 @@ body{
     z-index: 100;
 }
 #hen1{
-    left: 20%;
+    left: 15%;
 }
 #hen2{
-    left: 40%;
+    left: 45%;
 }
 #hen3{
-    left: 60%;
+    left: 75%;
 }
 .egg{
     position: absolute;
@@ -57,15 +60,15 @@ body{
 
 }
 #egg1{
-    left: calc(20% + 8%/2 - 2%/2);
+    left: calc(15% + 8%/2 - 2%/2);
 
 }
 #egg2{
-    left: calc(40% + 8%/2 - 2%/2);
+    left: calc(45% + 8%/2 - 2%/2);
 
 }
 #egg3{
-    left: calc(60% + 8%/2 - 2%/2);
+    left: calc(75% + 8%/2 - 2%/2);
 
 }
 .bullseye{
@@ -100,14 +103,39 @@ body{
 
 #basket{
     height: 100px;
-    width: 85px;
+    width: 160px;
     position: absolute;
     bottom: 5px;
+    background: url("imag/basket.png");
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
     z-index: 11;
 }
+#score_1{
+    position: absolute;
+    color: #0f6674;
+    font-size: 30px;
+    top: 45%;
+    left: 30%;
+}
+#restart{
+    border: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    background-color: #6f42c1;
+    color: greenyellow;
+    top: 40%;
+    font-size: 35px;
+    display: none;
+    cursor: pointer;
+
+}
+
+
+
+
 
 
 
