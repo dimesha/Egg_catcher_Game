@@ -51,7 +51,7 @@ body{
 }
 .egg{
     position: absolute;
-    top: 18%;
+    top: 20%;
     height: 5%;
     width: 2%;
     background-color: white;
@@ -83,13 +83,13 @@ body{
     z-index: 11;
 }
 #bullseye1{
-    left: calc(20% + 8%/2 - 7%/2);
+    left: calc(15% + 8%/2 - 7%/2);
 }
 #bullseye2{
-    left: calc(40% + 8%/2 - 7%/2);
+    left: calc(45% + 8%/2 - 7%/2);
 }
 #bullseye3{
-    left: calc(60% + 8%/2 - 7%/2);
+    left: calc(75% + 8%/2 - 7%/2);
 }
 
 #floor{
@@ -114,10 +114,10 @@ body{
 }
 #score_1{
     position: absolute;
-    color: #0f6674;
-    font-size: 30px;
+    color: darkblue;
+    font-size: 35px;
     top: 45%;
-    left: 30%;
+    left: 35%;
 }
 #restart{
     border: 0;
