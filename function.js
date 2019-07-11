@@ -3,7 +3,7 @@ $(document).on('mousemove',function (e) {
 });
 function egg_down(egg) {
     egg_current_position=parseInt(egg.css('top'));
-    egg.css('top',egg_current_position + 2);
+    egg.css('top',egg_current_position + speed);
 }
 
 function check_egg_hits_floor(egg) {
@@ -38,7 +38,7 @@ function decrement_life() {
 life--;
 life_span.text(life);
 }
-function check_hits_basket(egg) {
+function check_egg_hits_basket(egg) {
     if (collision(egg, basket)){
         egg_top=parseInt(egg.css('top'));
         if (egg_top < basket_top){
@@ -52,6 +52,18 @@ function check_hits_basket(egg) {
 
 function update_score() {
 score++;
+if (score % 10 === 0 && speed <= max_speed){
+    speed++;
+}
 score_span.text(score);
 score_1.text(score);
 }
+
+function stop_the_game() {
+    cancelAnimationFrame(anim_id);
+    restart.slideDown();
+
+}
+restart.click(function () {
+    location.reload();
+});
