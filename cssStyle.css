@@ -120,7 +120,7 @@ body{
     left: 35%;
 }
 #restart{
-    border: 0;
+    border: 5px solid #d39e00;
     position: absolute;
     height: 10%;
     width: 100%;
@@ -130,10 +130,9 @@ body{
     font-size: 35px;
     display: none;
     cursor: pointer;
+    z-index: 100;
 
 }
-
-
 
 
 

@@ -9,13 +9,13 @@ $(function () {
         if (check_egg_hits_floor(egg2) || check_egg_hits_basket(egg2)){
             set_egg_to_initial_position(egg2);
         }else {
-            egg_down(egg2);
+            egg_down2(egg2);
         }
 
         if (check_egg_hits_floor(egg3) || check_egg_hits_basket(egg3)){
             set_egg_to_initial_position(egg3);
         }else {
-            egg_down(egg3);
+            egg_down3(egg3);
         }
 
         if (life > 0){

@@ -1,11 +1,29 @@
 $(document).on('mousemove',function (e) {
     basket.css('left',e.pageX);
 });
+////////////////////////////////////////
 function egg_down(egg) {
     egg_current_position=parseInt(egg.css('top'));
     egg.css('top',egg_current_position + speed);
 }
+////////////////////////////////////////////////
 
+function egg_down2(eggA) {
+    egg_current_position=parseInt(eggA.css('top'));
+    eggA.css('top',egg_current_position + speed2);
+}
+
+function egg_down3(eggB) {
+    egg_current_position=parseInt(eggB.css('top'));
+    eggB.css('top',egg_current_position + speed3);
+}
+
+
+
+
+
+
+///////////////////////////////////////
 function check_egg_hits_floor(egg) {
     if (collision(egg, floor)){
         show_bulls_eye(egg);
